@@ -15,6 +15,14 @@ namespace GitExample
             return total;
         }
 
+        public static int Product(int num1, int num2)
+        {
+            int total;
+            total = num1 * num2;
+            return total;
+        }
+
+
         static void Main(string[] args)
         {
             Console.Write("Enter a number: ");
@@ -22,6 +30,9 @@ namespace GitExample
             Console.Write("Enter another number: ");
             int n2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The sum of two numbers is : {0} \n", Sum(n1, n2));
+            Console.WriteLine("The sum of two numbers is : {0} \n", Product(n1, n2));
         }
+
+
     }
 }
